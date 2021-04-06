@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript BOM Window Object</title>
+</head>
+<body>
+    <button onclick="openGoogle()">새로운 창 열기</button>
+    <button onclick="closeGoogle()">새로 연 창 닫기</button>
+
+	<script>
+        var newObj;
+
+        function openGoogle() {
+            newObj = window.open('https://www.google.co.kr/');
+        }
+        function closeGoogle() {
+            newObj.close();
+        }
+	</script>
+</body>
+</html>
